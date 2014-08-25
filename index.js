@@ -1,5 +1,6 @@
 var SE = require('stackexchange');
-var entities = require("entities");
+var entities = require('entities');
+var prompt = require('prompt');
 
 var context = new SE({ 
   clientId: 3502,
@@ -30,11 +31,31 @@ var stack = function() {
     // views:'',
     // wiki:'',
   };
-  context.search.advanced(criteria, function(err, results){
+  context.search.advanced(criteria, function(err, answers){
     if (err) throw err;
-    results.items.forEach(function(item, index){
-      console.log('\n['+index+']: ' + entities.decodeHTML(item.title));
-    });
+    if (answers.items.length === 0) {
+
+      console.log('\x1B[31mYour search returned no matches\x1B[39m');
+
+    } else {
+      prompt.start();
+
+      answers.items.forEach(function(item, index){
+        console.log('\n['+index+']: ' + entities.decodeHTML(item.title));
+      });
+
+      var message = 'Which answers would you like to see?';
+
+      prompt.get(message, function(err, result) {
+        if (err) throw err;
+        console.log(
+          answers.items[
+            result[message]
+          ]
+        );
+      });
+
+    }
   });
 };
 
