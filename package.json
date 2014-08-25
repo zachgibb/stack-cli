@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/bighazycrab/stack-cli",
   "dependencies": {
-    "entities": "^1.1.1",
+    "html-to-text": "^0.1.0",
     "prompt": "^0.2.13",
     "stackexchange": "0.0.7"
   }
