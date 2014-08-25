@@ -1,0 +1,19 @@
+{
+  "name": "stack-cli",
+  "version": "0.0.0",
+  "description": "Search Stack Exchange from the command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "stack \"install npm modules\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bighazycrab/stack-cli.git"
+  },
+  "author": "Zach Gibb <zachgibb@gmail.com> (http://www.zachgibb.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bighazycrab/stack-cli/issues"
+  },
+  "homepage": "https://github.com/bighazycrab/stack-cli"
+}
