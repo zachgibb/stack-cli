@@ -26,6 +26,6 @@
   },
   "preferGlobal": "true",
   "bin": {
-    "stack-cli" : "lib/index.js"
+    "stack-cli" : "lib/stack.min.js"
   }
 }
