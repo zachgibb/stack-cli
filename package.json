@@ -20,8 +20,15 @@
   },
   "homepage": "https://github.com/bighazycrab/stack-cli",
   "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
     "html-to-text": "^0.1.0",
     "prompt": "^0.2.13",
     "stackexchange": "0.0.7"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "stack-cli" : "lib/index.js"
   }
 }

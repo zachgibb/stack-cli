@@ -3,11 +3,11 @@ module.exports = function(grunt){
     pkg: grunt.file.readJSON('package.json'),
 
     jshint: {
-      index: ['*.js']
+      index: ['lib/*.js', '*.js']
     },
 
     watch: {
-      files: ['*.js'],
+      files: ['lib/*.js', '*.js'],
       tasks: ['jshint'],
       options: {
         spawn: false
