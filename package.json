@@ -4,7 +4,7 @@
   "description": "Search Stack Exchange from the command line",
   "main": "index.js",
   "scripts": {
-    "test": "stack \"install npm modules\""
+    "test": "stack-cli \"install npm modules\""
   },
   "repository": {
     "type": "git",
