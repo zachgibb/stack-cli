@@ -20,12 +20,15 @@
   },
   "homepage": "https://github.com/bighazycrab/stack-cli",
   "dependencies": {
+    "cli-color": "^0.3.2",
     "html-to-text": "^0.1.0",
+    "open": "0.0.5",
     "prompt": "^0.2.13",
+    "request": "^2.40.0",
     "stackexchange": "0.0.7"
   },
   "preferGlobal": "true",
   "bin": {
-    "stack-cli" : "lib/stack.min.js"
+    "stack-cli": "lib/stack.js"
   }
 }
