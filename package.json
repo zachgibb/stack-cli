@@ -1,6 +1,6 @@
 {
   "name": "stack-cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Search Stack Exchange from the command line",
   "main": "index.js",
   "scripts": {
